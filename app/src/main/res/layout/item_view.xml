@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    app:cardCornerRadius="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/userImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="12dp"/>
+
+        <TextView
+            android:id="@+id/userTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/userImage"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginHorizontal="12dp"/>
+
+        <TextView
+            android:id="@+id/userText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#212121"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userTime"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="12dp"/>
+
+        <ImageView
+            android:id="@+id/LikeBtn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:clickable="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userText" />
+
+        <TextView
+            android:id="@+id/LikesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf= "@+id/LikeBtn"
+            app:layout_constraintTop_toBottomOf="@+id/userText"
+            android:layout_marginTop="8dp"
+            android:layout_margin="12dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
